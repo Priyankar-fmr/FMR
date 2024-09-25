@@ -1,1 +1,1 @@
-# FMR Trainig Programs
+# FMR Training Programs

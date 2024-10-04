@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Form</title>
+        <script>
+            function showAlert(){
+                alert("You have successfully submitted the book form.")
+            }
+        </script>
+    </head>
+    <body>
+        <h1>A simple form</h1><br>
+        <h3>Form Fundamentals</h3><br>
+        <form onsubmit="showAlert();return false;">
+            <fieldset>
+                <legend>Customer Info</legend>
+                
+                <label for="cusname">Name:</label>
+                <input type="text"id="cusname"name="cusname"placeholder="Enter your Name" autofocus required><br>
+
+                <label for="telephone">Telephone:</label>
+                <input type="tel"id="telephone"name="telephone"placeholder="Pattern 123-456-8910"><br>
+
+                <label for="mail">Mail:</label>
+                <input type="mail"id="mail"name="mail"placeholder="Enter your email" required><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Books</legend>
+                    <label for="book">Book:</label>
+                    <datalist id="bookList">
+                        <option value="Html5 by Bruce">
+                        <option value="Html5 up and running">
+                        <option value="Head first Html5">
+                        <option value="Mastering Html5">
+                    </datalist><br> 
+             </fieldset>      
+             
+             <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>            
